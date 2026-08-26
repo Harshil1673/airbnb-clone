@@ -1,0 +1,113 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-sticky);
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border-light);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 280ms ease,
+              visibility 320ms;
+  will-change: transform, opacity;
+}
+
+.visible {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.navInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--page-padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.tabs {
+  display: flex;
+  gap: 24px;
+  height: 100%;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: var(--fs-small);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text-secondary);
+  border-bottom: 3px solid transparent;
+  padding-top: 3px;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+  cursor: pointer;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.tab:hover {
+  color: var(--color-text);
+}
+
+.active {
+  color: var(--color-text);
+  border-bottom-color: var(--color-text);
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navPrice {
+  text-align: right;
+  line-height: 1.2;
+}
+
+.navPriceAmount {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-semibold);
+}
+
+.navPriceNight {
+  font-size: var(--fs-caption);
+  color: var(--color-text);
+}
+
+.navRating {
+  font-size: var(--fs-caption);
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+
+.navReserveButton {
+  padding: 10px 24px;
+  background: var(--color-primary-gradient);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-semibold);
+  cursor: pointer;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.navReserveButton:hover {
+  opacity: 0.92;
+  transform: scale(1.02);
+}
+
+.navReserveButton:active {
+  transform: scale(0.98);
+}

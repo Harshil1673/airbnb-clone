@@ -1,0 +1,426 @@
+.section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--page-padding);
+}
+
+.twoColumn {
+  display: flex;
+  gap: 80px;
+  position: relative;
+}
+
+.leftColumn {
+  flex: 1;
+  min-width: 0;
+}
+
+.rightColumn {
+  width: 372px;
+  flex-shrink: 0;
+  padding-top: 32px;
+}
+
+/* === Property Overview === */
+.overview {
+  padding: 32px 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.overviewTitle {
+  font-size: var(--fs-section);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.overviewDetails {
+  font-size: var(--fs-body);
+  color: var(--color-text);
+}
+
+/* === Guest Favourite Badge === */
+.guestFavourite {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  margin: 24px 0;
+  gap: 16px;
+}
+
+.gfLeft {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.laurelImg {
+  width: 24px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.gfLabel {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-body);
+  line-height: 1.2;
+}
+
+.gfDescription {
+  flex: 1;
+  font-size: var(--fs-small);
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+
+.gfRating {
+  text-align: center;
+  padding: 0 16px;
+  border-left: 1px solid var(--color-border-light);
+}
+
+.gfRatingValue {
+  font-size: 22px;
+  font-weight: var(--fw-bold);
+}
+
+.gfStars {
+  display: flex;
+  gap: 1px;
+  margin-top: 2px;
+  justify-content: center;
+  color: var(--color-text);
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+
+.gfReviews {
+  text-align: center;
+  padding: 0 16px;
+  border-left: 1px solid var(--color-border-light);
+}
+
+.gfReviewCount {
+  font-size: 22px;
+  font-weight: var(--fw-bold);
+}
+
+.gfReviewLabel {
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text-secondary);
+  text-decoration: underline;
+}
+
+/* === Host Info === */
+.hostInfo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.hostAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: #1B4332;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 11px;
+  font-weight: var(--fw-bold);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.hostAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hostText {
+  flex: 1;
+}
+
+.hostName {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+}
+
+.hostSince {
+  font-size: var(--fs-small);
+  color: var(--color-text-secondary);
+}
+
+/* === Feature Highlights === */
+.features {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.feature {
+  display: flex;
+  gap: 16px;
+  padding: 12px 0;
+}
+
+.featureIcon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+}
+
+.featureIcon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.featureContent {
+  flex: 1;
+}
+
+.featureTitle {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+}
+
+.featureDesc {
+  font-size: var(--fs-small);
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+
+/* === Translation Banner === */
+.translationBanner {
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  margin: 24px 0;
+  font-size: var(--fs-small);
+  color: var(--color-text-secondary);
+}
+
+.translationBanner a {
+  font-weight: var(--fw-semibold);
+  color: var(--color-text);
+  text-decoration: underline;
+  margin-left: 4px;
+}
+
+/* === Description === */
+.description {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.descriptionText {
+  font-size: var(--fs-body);
+  line-height: 1.5;
+  color: var(--color-text);
+  /* Truncated to ~4 lines */
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.showMoreLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 12px;
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.showMoreLink svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* === Where You'll Sleep === */
+.sleepSection {
+  padding: 32px 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.sectionHeading {
+  font-size: var(--fs-section);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text);
+  margin-bottom: 24px;
+}
+
+.sleepGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.sleepCard {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.sleepCardImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.sleepCardTitle {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  margin-top: 12px;
+}
+
+.sleepCardDesc {
+  font-size: var(--fs-small);
+  color: var(--color-text-secondary);
+  margin-top: 4px;
+}
+
+/* === Amenities === */
+.amenitiesSection {
+  padding: 32px 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.amenitiesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.amenityItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  font-size: var(--fs-body);
+  color: var(--color-text);
+  border-bottom: none;
+}
+
+.amenityItem svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: var(--color-text);
+}
+
+.amenityStrikethrough {
+  composes: amenityItem;
+  text-decoration: line-through;
+  color: var(--color-text-secondary);
+}
+
+.amenityStrikethrough svg {
+  color: var(--color-text-secondary);
+}
+
+.showAllButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 23px;
+  margin-top: 16px;
+  border: 1px solid var(--color-text);
+  border-radius: var(--radius-md);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text);
+  background: var(--color-bg);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.showAllButton:hover {
+  background: var(--color-bg-secondary);
+}
+
+/* === Calendar === */
+.calendarSection {
+  padding: 32px 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.calendarSubtitle {
+  font-size: var(--fs-small);
+  color: var(--color-text-secondary);
+  margin-top: 4px;
+  margin-bottom: 24px;
+}
+
+.calendarPlaceholder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.calMonth {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  text-align: center;
+}
+
+.calGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0;
+  margin-top: 16px;
+}
+
+.calDayHeader {
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text-secondary);
+  text-align: center;
+  padding: 4px 0;
+}
+
+.calDay {
+  text-align: center;
+  padding: 10px 0;
+  font-size: var(--fs-small);
+  color: var(--color-text);
+  border-radius: var(--radius-full);
+}
+
+.calDayEmpty {
+  composes: calDay;
+}
+
+.calDayDisabled {
+  composes: calDay;
+  color: var(--color-border);
+  text-decoration: line-through;
+}
+
+.calDaySelected {
+  composes: calDay;
+  background: var(--color-text);
+  color: white;
+  border-radius: var(--radius-full);
+  font-weight: var(--fw-semibold);
+}
+
+.calDayInRange {
+  composes: calDay;
+  background: var(--color-bg-secondary);
+}

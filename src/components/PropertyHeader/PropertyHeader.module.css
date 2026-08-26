@@ -1,0 +1,45 @@
+.propertyHeader {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px var(--page-padding) 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: var(--fs-title);
+  font-weight: var(--fw-semibold);
+  line-height: 1.25;
+  color: var(--color-text);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  margin-left: 24px;
+}
+
+.actionButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: var(--radius-md);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text);
+  text-decoration: underline;
+  transition: background var(--transition-fast);
+}
+
+.actionButton:hover {
+  background: var(--color-bg-secondary);
+}
+
+.actionButton svg {
+  width: 16px;
+  height: 16px;
+}
